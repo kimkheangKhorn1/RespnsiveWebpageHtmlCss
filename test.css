@@ -1,0 +1,15 @@
+.relative-container {
+  width: 300px;
+  height: 300px;
+  background-color: lightgrey;
+  position: relative; /* Establishes a reference point for absolutely positioned children */
+}
+
+.relative-box {
+  position: relative;
+  top: 20px; /* Moves the element 20px down from its normal position */
+  left: 20px; /* Moves the element 20px to the right from its normal position */
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+}
