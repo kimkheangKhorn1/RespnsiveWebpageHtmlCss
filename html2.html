@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible website</title>
+    <link rel="stylesheet" href="6style.css" />
+    <style>
+      body {
+        background-color: rgb(0, 204, 153);
+        font-family: Arial;
+        margin: 0px;
+        padding: 0px;
+      }
+      * {
+        text-decoration: none;
+        list-style: none;
+        padding: 0px;
+      }
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 30px 20px 30px;
+        background-color: whitesmoke;
+        align-items: center;
+      }
+      .header a {
+        color: black;
+      }
+      .header ul {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+      }
+      .header .logo {
+        font-weight: bold;
+      }
+      .main_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 30px 20px 30px 20px;
+        gap: 1rem;
+      }
+      .main_container > div {
+        background-color: lightgray;
+        padding: 10px;
+      }
+      .main_container .container1 {
+        display: flex;
+        flex-direction: column;
+      }
+      .main_container .container1 > img {
+        height: 500px;
+      }
+      .footer .container3 {
+        background-color: whitesmoke;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .footer .container3 h2 {
+        text-align: center;
+      }
+      @media screen and (max-width: 1024px) {
+        .main_container {
+          margin: 10px 10px;
+        }
+        .main_container .container1 {
+          grid-column: 1 / span 1;
+        }
+        .main_container .container2 {
+          grid-column: 2 / span 1;
+        }
+      }
+      @media screen and (max-width: 650px) {
+        .main_container {
+          margin: 10px 10px;
+          display: unset;
+        }
+        .main_container .container1 {
+          grid-column: 1 / span 1;
+        }
+        .main_container .container2 {
+          grid-column: 1 / span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">WebDEVElOPER</a>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="main_container">
+        <div id="#" class="container1">
+          <h2>Hello, my name is Kheang.</h2>
+          <img
+            src="https://i.pinimg.com/236x/57/8d/80/578d80895f5ea6074857e8baf0b38bfd.jpg"
+            alt="The_image_Mr.mask"
+          />
+          <p>I am a web-developer, currently working at AI Farm.</p>
+        </div>
+        <div id="#" class="container2">
+          <h2>Project1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores molestias, unde sequi maxime dignissimos eligendi officia
+            itaque nihil ipsam provident alias exercitationem adipisci quidem,
+            totam accusamus repellat? Ipsum, deleniti.
+          </p>
+          <h2></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            repellat, quia alias nulla, laboriosam labore accusamus beatae
+            fugiat ea, repellendus eius quis omnis veritatis nihil laudantium
+            amet odit nobis dolor.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div id="#" class="container3">
+        <div class="box">
+          <h2>Contact</h2>
+          <ul>
+            <li>Youtube: <a href="#">Travburg</a></li>
+            <li>Facebook: <a href="#">KimKhamsaGroup</a></li>
+            <li>Email: <a href="#">kimkhamsagroup@gmail.com</a></li>
+            <li>Linked: <a href="#">DemoKim</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="#">Create Website</a></li>
+            <li><a href="#">Promote Products</a></li>
+            <li><a href="#">Develop Software</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

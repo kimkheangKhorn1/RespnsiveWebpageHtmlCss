@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is html55.html rewrite</title>
+  <link rel="stylesheet" href="">
+  <style>
+    .sign-in{
+      margin: 100px auto 100px auto;
+      width: 800px;
+      border-radius: 8px;
+      border: 1px solid black;
+      padding: 20px 10px 20px 10px;
+      background-color:bisque;
+      box-shadow: 0 0 10px #333;
+    }
+    .sign-in h2{
+      text-align: center;
+    }
+    .sign-in label{
+      display: block;
+    }
+    .sign-in input[type="text"], input[type="password"], input[type="email"]{
+      display: block;
+      width: 98%;
+      padding: 5px 0px 5px 10px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      margin-bottom: 10px;
+    }
+    .sign-in input[type="submit"] {
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      background-color: lightgreen;
+      padding: 5px 10px;
+      font-size: 20px;
+      color: white;
+      font-weight:bolder;
+      letter-spacing: 1px;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+    .sign-in input[type="submit"]:hover {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+    <section class="registration-form">
+      <div class="sign-in">
+        <h2>Sign in</h2>
+        <form action="/register" method="post">
+          <label for="userName">Name:</label>
+          <input type="text" id="userName" name="userName" required>
+          <label for="email">Email:</label>
+          <input type="email" id="userEmail" name="userEmail" required>
+          <label for="userPassword">Password:</label>
+          <input type="password" id="userPassword" name="userPassword" required minlenght>
+          <label for="userConfirmPassword">Confirm Password:</label>
+          <input type="password" id="userConfirmPassword" name="userConfirmPassword" required>
+          <input type="submit" value="submmit">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

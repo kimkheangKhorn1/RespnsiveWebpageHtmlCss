@@ -16,6 +16,7 @@
 :root {
   --text-color: #021f2a;
   --bg-color: #fff;
+  --pri-text-color: #333; 
 }
 
 ::-webkit-scrollbar {
@@ -490,3 +491,43 @@ web fonts
 animation basics -
 pagination - flex box - 
 grid - media queries. */
+
+
+/* New update for special event  */
+.countdown-section {
+  padding: 50px 100px;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.countdown-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.time-box {
+  background-color: var(--pri-text-color);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--bg-color);
+  text-align: center;
+}
+
+.time-number {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.time-label {
+  font-size: 1rem;
+  margin-top: 5px;
+  display: block;
+}

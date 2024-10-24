@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my html form created by using html css.</title>
+    <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    .form-register{
+      background-color: lightsalmon;
+      width: 400px;
+      padding: 30px 20px;
+      border-radius: 5px;
+      border: none;
+      display: block;
+      margin: 30px auto 30px auto;
+      box-shadow: 0 0 10px #b9b9b9;
+    }
+    .sign-in h2{
+      margin-bottom: 10px;
+    }
+    .sign-in input[type="text"], input[type="password"], input[type="email"] {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .sign-in input[type="submit"]{
+      display: block;
+      cursor: pointer;
+      border-radius: 7px;
+      border: none;
+      font-size: medium;
+      font-weight: bold;
+      color: white;
+    }
+    .sign-in input[type="text"], input[type="email"], input[type="password"]{
+      width: 97%;
+      border-radius: 5px;
+      border: 1px solid gray;
+      padding: 5px 0px 5px 10px;
+    }
+    .sign-in input[type="submit"]{
+      background-color: #45a049;
+      letter-spacing: 1px;
+      padding: 5px 10px;
+    }
+    .sign-in input[type="submit"]:hover{
+      background-color: #339c38;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <section class="form-register">
+        <div class="sign-in">
+          <h2>Sign in</h2>
+          <form action="/registration" method="post">
+            <label for="userName">Enter your name: </label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="userEmail">Enter your Email: </label>
+            <input type="email" id="userEmail" name="userEmail" required>
+
+            <label for="userPassword">Enter password: </label>
+            <input type="password" id="userPassword" name="userPassword"
+              required minlength="8">
+
+            <label for="confirmPassword">Confirm password: </label>
+            <input type="password" id="confirmPassword" name="confirmPassword"
+              required minlength="8">
+
+            <input type="submit" value="submit">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
+</html>

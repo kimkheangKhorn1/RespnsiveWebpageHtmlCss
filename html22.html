@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      text-decoration: none;
+    }
+    section{
+      margin: 10px;
+    }
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px 50px;
+      background-color: lightseagreen;
+      margin-bottom: 30px;
+    }
+    .logo{
+      font-size: larger;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .logo a{
+      color: #333;
+    }
+    .nav-bar ul{
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+    .nav-bar a{
+      color: #333;
+    }
+    .information{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .information .profile, .description{
+      padding: 10px;
+      background-color: lightseagreen;
+    }
+    .information .description p{
+      margin: 20px 0px 20px 0px;
+    }
+    .information .profile{
+      display: flex;
+      flex-direction: column;
+    }
+    .information .profile img{
+      height: 400px;
+      margin: 20px 0px 20px 0px;
+    }
+    footer{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 30px 50px;
+      background-color: lightseagreen;
+    }
+    .contact li{
+      margin-top: 6px;
+    }
+    .services li{
+      margin-top: 6px;
+    }
+    @media screen and (max-width: 500px){
+      .information{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href>WebSherift</a>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="information">
+        <div class="profile">
+          <h2>Hello, welcome to WekNer</h2>
+          <img src="Image/346969990_238568532184511_5232529098870797098_n.jpg" alt="profile-picture">
+          <p>I am a web developer working in industry in phnom penh city.</p>
+        </div>
+        <div class="description">
+          <h2>Project1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nemo
+            quasi cum aspernatur ullam porro optio eligendi expedita, accusamus
+            culpa vero temporibus in delectus voluptatum deleniti officiis, quae
+            ratione exercitationem!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            alias nesciunt quae doloremque minus! Eius quaerat repudiandae
+            nobis, praesentium similique nesciunt molestias velit hic omnis,
+            veniam, harum laborum necessitatibus amet!</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>Youtube: <a href>Youtube</a></li>
+          <li>Facebook: <a href>Facebook</a></li>
+          <li>Tiktok: <a href>Tiktok</a></li>
+          <li>Telegram: <a href>Telegram</a></li>
+        </ul>
+      </div>
+      <div class="services">
+        <h3>Services</h3>
+        <ul>
+          <li>Create Website<a href="">create website</a></li>
+          <li>Promote Product<a href="">promote product</a></li>
+          <li>Hack Services<a href="">hack services</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
